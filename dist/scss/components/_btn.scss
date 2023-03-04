@@ -1,0 +1,32 @@
+.btn{
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    &__dark{
+        background-color: $clr-dark;
+        color: $clr-light;
+        border: 1px solid $clr-dark;
+
+        &:hover{
+            background-color: lighten($clr-dark, 20%);
+            border: 1px solid $clr-dark;
+        }
+    }
+
+    &__dark__outline{
+        background-color: transparent;
+        border: 1px solid $clr-dark;
+        color: $clr-dark;
+
+        &:hover{
+            background-color: $clr-gray;
+            border: 1px solid $clr-dark;
+            color: $clr-dark;
+        }
+    }
+
+    &__green__outline{
+        background-color: transparent;
+        border: 1px solid $clr-primary;
+        color: $clr-primary;
+    }
+}
