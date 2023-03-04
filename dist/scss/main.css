@@ -484,11 +484,12 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 20rem 5rem;
+  margin: 20rem 7rem;
 }
 .banner__wrapper h1 {
   font-size: 7rem;
   color: #1E3932;
+  margin-bottom: 2rem;
 }
 .banner__wrapper a {
   font-weight: 600;
