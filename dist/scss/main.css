@@ -422,6 +422,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 
 .header {
   background-color: #FFFFFF;
+  border-bottom: 1px solid #DDDDDD;
   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.06);
 }
 .header__wrapper {
@@ -498,6 +499,51 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   color: #006341;
 }
 
+.ad__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+  color: #1E3932;
+  margin: 3rem 0;
+}
+.ad__wrapper .ad__content {
+  background-color: #D4E9E2;
+  padding: 5rem;
+}
+.ad__wrapper .ad__content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.ad__wrapper .ad__content p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.ad__wrapper .ad__content ul {
+  margin: 0 5rem;
+  margin-bottom: 3rem;
+}
+.ad__wrapper .ad__content ul li {
+  list-style-type: disc;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.ad__wrapper .ad__content a {
+  display: inline-block;
+}
+.ad__wrapper:last-child .ad__content {
+  background-color: #3D7170;
+  color: #FFFFFF;
+  padding: 13rem 12rem;
+  text-align: center;
+}
+.ad__wrapper:last-child .ad__content h2 {
+  font-size: 5rem;
+}
+.ad__wrapper:last-child .ad__content p {
+  font-size: 2.3rem;
+}
+
 .btn {
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
@@ -525,4 +571,9 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   background-color: transparent;
   border: 1px solid #1E3932;
   color: #1E3932;
+}
+.btn__light__outline {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

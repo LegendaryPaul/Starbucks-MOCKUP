@@ -29,4 +29,9 @@
         border: 1px solid $clr-primary;
         color: $clr-primary;
     }
+    &__light__outline{
+        background-color: transparent;
+        border: 1px solid $clr-light;
+        color: $clr-light;
+    }
 }

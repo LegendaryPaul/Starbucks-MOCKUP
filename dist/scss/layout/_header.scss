@@ -1,5 +1,6 @@
 .header{
     background-color: $clr-light;
+    border-bottom: 1px solid $clr-gray;
     box-shadow: $shadow;
     &__wrapper{
         @include centerBetween;
@@ -71,6 +72,54 @@
             font-weight: 600;
             &:first-child{
                 color: $clr-primary-light;
+            }
+        }
+    }
+}
+
+.ad{
+
+    &__wrapper{
+        @include grid(2, 0);
+        color: $clr-primary;
+        margin: 3rem 0;
+        .ad__content{
+            background-color: #D4E9E2;
+            padding: 5rem;
+            h2{
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+            p{
+                font-size: 2rem;
+                font-weight: 500;
+                margin-bottom: 2rem;
+            }
+            ul{
+                margin: 0 5rem;
+                margin-bottom: 3rem;
+                li{
+                    list-style-type: disc;
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+            }
+            a{
+                display: inline-block;
+            }
+        }
+    }
+    &__wrapper:last-child{
+        .ad__content{
+        background-color: #3D7170;
+        color: $clr-light;
+        padding: 13rem 12rem;
+        text-align: center;
+            h2{
+                font-size: 5rem;
+            }
+            p{
+                font-size: 2.3rem;
             }
         }
     }
