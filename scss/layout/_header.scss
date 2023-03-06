@@ -49,7 +49,7 @@
 }
 
 .banner{
-    background-image: url("/dist/img/bannerbackground.jpeg");
+    background-image: url("/img/bannerbackground.jpeg");
     width: 100%;
     height: calc(100vh - 102px);
     object-fit: cover;
@@ -81,6 +81,9 @@
 
     &__wrapper{
         @include grid(2, 0);
+        @include mediaQuery($mobile){
+            @include grid(1, 0rem);
+        }
         color: $clr-primary;
         margin: 3rem 0;
         .ad__content{
@@ -109,18 +112,88 @@
             }
         }
     }
-    &__wrapper:last-child{
+    &__wrapper:nth-child(2){
+        @include mediaQuery($mobile){
+                img{
+                    order: -1;
+                    }
+                .ad__content{
+                    justify-content: unset;
+                    padding: unset;
+                }
+        }
         .ad__content{
+            @include mediaQuery($mobile){
+                .ad__content{
+                    padding: 1rem 5rem;
+                }
+        }
         background-color: #3D7170;
         color: $clr-light;
-        padding: 13rem 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 3rem 12rem;
         text-align: center;
             h2{
                 font-size: 5rem;
+                font-weight: 700;
             }
             p{
                 font-size: 2.3rem;
+                font-weight: 600;
             }
         }
     }
+    &__wrapper:nth-child(3){
+        .ad__content{
+        background-color: #F4C5A1;
+        color: $clr-primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 3rem 12rem;
+        text-align: center;
+            h2{
+                font-size: 5rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2.3rem;
+                font-weight: 600;
+            }
+        }
+    }
+    &__wrapper:last-child{
+        @include mediaQuery($mobile){
+            img{
+                order: -1;
+                }
+    }
+        .ad__content{
+        background-color: #8B323E;
+        color: $clr-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 3rem 12rem;
+        text-align: center;
+            h2{
+                font-size: 5.5rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2.3rem;
+                font-weight: 600;
+            }
+        }
+    }
+    
 }
+    

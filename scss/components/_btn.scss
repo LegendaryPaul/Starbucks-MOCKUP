@@ -16,6 +16,7 @@
         background-color: transparent;
         border: 1px solid $clr-dark;
         color: $clr-dark;
+        font-weight: 600;
 
         &:hover{
             background-color: $clr-gray;
@@ -28,10 +29,12 @@
         background-color: transparent;
         border: 1px solid $clr-primary;
         color: $clr-primary;
+        font-weight: 600;
     }
     &__light__outline{
         background-color: transparent;
         border: 1px solid $clr-light;
         color: $clr-light;
+        font-weight: 600;
     }
 }
